@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gabriel Bantigui — Backend developer portfolio specializing in APIs, databases and server-side systems.">
+<title>Gabriel Bantigui — Backend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&family=Inconsolata:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+  <nav id="navbar" class="site-nav" aria-label="Main navigation">
+    <div class="nav-logo">gb<span aria-hidden="true" class="blink">_</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle theme">[light_mode]</button>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#home">home</a>
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#projects">projects</a>
+    <a href="#contact">contact</a>
+  </div>
+</header>
+<main>
+  <section id="home" class="hero-section">
+    <canvas class="hero-matrix" id="matrixCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-pre reveal">
+        <span class="g">$ </span>ssh gabriel@portfolio.dev<br>
+        <span class="d">// connection established...</span><br>
+        <span class="g">$ </span>cat profile.json
+      </div>
+      <h1 class="hero-name reveal" style="transition-delay:0.1s">GABRIEL<br>BANTIGUI</h1>
+      <div class="hero-role reveal" style="transition-delay:0.2s">
+        <span id="typed-role">backend_developer</span><span class="cursor" aria-hidden="true"></span>
+      </div>
+      <p class="hero-bio reveal" style="transition-delay:0.3s">
+        I build the systems that power the web — databases, APIs, server logic, and everything running behind the scenes. Passionate about writing clean, efficient, and scalable backend code.
+      </p>
+      <div class="hero-cta reveal" style="transition-delay:0.4s">
+        <a href="#projects" class="btn btn-primary">./view_projects</a>
+        <a href="res/GABRIEL_BANTIGUI.pdf" class="btn btn-outline" download>⬇ resume.pdf</a>
+        <a href="#contact" class="btn btn-outline">./contact</a>
+      </div>
+      <div class="hero-stats reveal" style="transition-delay:0.5s">
+        <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Projects</div></div>
+        <div class="stat"><div class="stat-num">6+</div><div class="stat-label">Technologies</div></div>
+        <div class="stat"><div class="stat-num">2027</div><div class="stat-label">Graduating</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="about">
+    <div class="about-grid">
+      <div class="reveal-left">
+        <div class="terminal-window" aria-label="Developer profile data">
+          <div class="terminal-bar">
+            <div class="t-dot r"></div><div class="t-dot y"></div><div class="t-dot g"></div>
+            <div class="t-title">profile.json — bash</div>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line"><span class="p">{</span></div>
+            <div class="t-line indent"><span class="k">"name"</span>: <span class="s">"Gabriel Bantigui"</span>,</div>
+            <div class="t-line indent"><span class="k">"role"</span>: <span class="s">"Backend Developer"</span>,</div>
+            <div class="t-line indent"><span class="k">"location"</span>: <span class="s">"Philippines"</span>,</div>
+            <div class="t-line indent"><span class="k">"status"</span>: <span class="s">"Student &amp; Builder"</span>,</div>
+            <div class="t-line indent"><span class="k">"focus"</span>: [</div>
+            <div class="t-line" style="padding-left:3rem"><span class="s">"APIs"</span>, <span class="s">"Databases"</span>,</div>
+            <div class="t-line" style="padding-left:3rem"><span class="s">"Server Logic"</span>, <span class="s">"Security"</span></div>
+            <div class="t-line indent">],</div>
+            <div class="t-line indent"><span class="k">"available"</span>: <span class="p">true</span>,</div>
+            <div class="t-line indent"><span class="k">"coffee_dependent"</span>: <span class="p">true</span></div>
+            <div class="t-line"><span class="p">}</span></div>
+            <br>
+            <div class="t-line"><span class="c">// last updated: 2026</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text reveal-right">
+        <div class="term-prompt">whoami</div>
+        <h2 class="section-title"><span class="dim">//</span> About Me</h2>
+        <p>Hey, I'm Gabriel — a backend development student from the Philippines. I thrive in the parts of web development that users never directly see but always feel: fast responses, reliable databases, and well-structured APIs.</p>
+        <p>I enjoy the challenge of building systems that are not just functional, but efficient and maintainable. Whether it's designing a database schema or crafting a RESTful API from scratch, I approach every problem with precision.</p>
+        <div class="about-tags">
+          <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Node.js</span>
+          <span class="tag">REST APIs</span><span class="tag">Git</span><span class="tag">Linux CLI</span>
+          <span class="tag">Database Design</span><span class="tag">Server-Side Logic</span>
+        </div>
+        <div class="edu-card">
+          <div class="edu-school">STI College Naga</div>
+          <div class="edu-deg">Bachelor of Science in Information Technology</div>
+          <div class="edu-yr">2023 – 2027 · Bicol, Philippines</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="skills">
+    <div class="section-header">
+      <div class="term-prompt reveal">ls -la skills/</div>
+      <h2 class="section-title reveal"><span class="dim">//</span> Tech Stack</h2>
+      <p class="section-sub reveal">Skills built through coursework, personal projects, and obsessive late-night debugging sessions.</p>
+    </div>
+    <div class="skills-layout">
+      <div class="skill-cats reveal-left">
+        <button class="skill-cat-btn active" data-panel="backend" type="button">backend/</button>
+        <button class="skill-cat-btn" data-panel="frontend" type="button">frontend/</button>
+        <button class="skill-cat-btn" data-panel="tools" type="button">tools/</button>
+      </div>
+      <div class="reveal-right">
+        <div class="skill-panel active" id="panel-backend">
+          <div class="skill-grid">
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">PHP</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">MySQL</span><span class="skill-pct">78%</span></div><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">Node.js</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">REST API Design</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" data-w="75"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">SQL Queries</span><span class="skill-pct">82%</span></div><div class="skill-bar"><div class="skill-fill" data-w="82"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">Auth / JWT</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill" data-w="60"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-panel" id="panel-frontend">
+          <div class="skill-grid">
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">HTML5</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">CSS3</span><span class="skill-pct">78%</span></div><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" data-w="70"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">Bootstrap</span><span class="skill-pct">72%</span></div><div class="skill-bar"><div class="skill-fill" data-w="72"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-panel" id="panel-tools">
+          <div class="skill-grid">
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">Git &amp; GitHub</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">Linux CLI</span><span class="skill-pct">68%</span></div><div class="skill-bar"><div class="skill-fill" data-w="68"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">Postman</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" data-w="75"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span class="skill-name">VS Code</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="projects">
+    <div class="section-header">
+      <div class="term-prompt reveal">ls projects/ --details</div>
+      <h2 class="section-title reveal"><span class="dim">//</span> Projects</h2>
+      <p class="section-sub reveal">Backend-focused builds demonstrating real-world system design, API architecture, and database management.</p>
+    </div>
+    <div class="project-filters reveal">
+      <button class="filter-btn active" data-filter="all" type="button">[ all ]</button>
+      <button class="filter-btn" data-filter="api" type="button">[ api ]</button>
+      <button class="filter-btn" data-filter="web" type="button">[ web ]</button>
+      <button class="filter-btn" data-filter="db" type="button">[ database ]</button>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal" data-cat="api">
+        <div class="project-img" style="background:linear-gradient(135deg,#050f05,#091508)">
+          <span aria-hidden="true">⚙️</span>
+          <div class="project-img-scanline"></div>
+          <div class="project-img-overlay">
+            <a href="#" class="project-link-btn">[live]</a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="project-link-btn">[github]</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-category">api</div>
+          <h3 class="project-title">RESTful Student API</h3>
+          <p class="project-desc">A full CRUD REST API for a student management system. Features JWT authentication, input validation, and structured JSON responses. Built with PHP and MySQL.</p>
+          <div class="project-techs">
+            <span class="tech-badge">PHP</span><span class="tech-badge">MySQL</span><span class="tech-badge">JWT</span><span class="tech-badge">REST</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="web" style="transition-delay:0.1s">
+        <div class="project-img" style="background:linear-gradient(135deg,#030a08,#060f08)">
+          <span aria-hidden="true">🛒</span>
+          <div class="project-img-scanline"></div>
+          <div class="project-img-overlay">
+            <a href="#" class="project-link-btn">[live]</a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="project-link-btn">[github]</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-category">web</div>
+          <h3 class="project-title">E-Commerce Backend</h3>
+          <p class="project-desc">Server-side logic for an online store: product catalog management, user sessions, shopping cart persistence, and order processing with MySQL transactions.</p>
+          <div class="project-techs">
+            <span class="tech-badge">PHP</span><span class="tech-badge">MySQL</span><span class="tech-badge">Sessions</span><span class="tech-badge">HTML/CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="db" style="transition-delay:0.2s">
+        <div class="project-img" style="background:linear-gradient(135deg,#06050a,#0a0810)">
+          <span aria-hidden="true">🗃️</span>
+          <div class="project-img-scanline"></div>
+          <div class="project-img-overlay">
+            <a href="#" class="project-link-btn">[live]</a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="project-link-btn">[github]</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-category">database</div>
+          <h3 class="project-title">Library Management DB</h3>
+          <p class="project-desc">A normalized relational database for a library system. Includes ER diagrams, stored procedures, triggers, and complex SQL queries for reporting and analytics.</p>
+          <div class="project-techs">
+            <span class="tech-badge">MySQL</span><span class="tech-badge">SQL</span><span class="tech-badge">Stored Procs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="api" style="transition-delay:0.3s">
+        <div class="project-img" style="background:linear-gradient(135deg,#04090a,#060e10)">
+          <span aria-hidden="true">📡</span>
+          <div class="project-img-scanline"></div>
+          <div class="project-img-overlay">
+            <a href="#" class="project-link-btn">[live]</a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="project-link-btn">[github]</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-category">api</div>
+          <h3 class="project-title">Weather Data Aggregator</h3>
+          <p class="project-desc">A Node.js server that fetches, caches, and serves weather data from a public API. Implements basic rate limiting and a caching layer to minimize redundant API calls.</p>
+          <div class="project-techs">
+            <span class="tech-badge">Node.js</span><span class="tech-badge">REST API</span><span class="tech-badge">Caching</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="contact">
+    <div class="section-header">
+      <div class="term-prompt reveal">./contact --init</div>
+      <h2 class="section-title reveal"><span class="dim">//</span> Connect</h2>
+      <p class="section-sub reveal">Open to collaborations, internships, and interesting problems. Send a message — I respond within 24 hours.</p>
+    </div>
+    <div class="contact-layout">
+      <div class="reveal-left">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="contact-icon" aria-hidden="true">@</i>
+            <div><div class="contact-lbl">Email</div><div class="contact-val">gabntg2317@gmail.com</div></div>
+          </div>
+          <div class="contact-item">
+            <i class="contact-icon" aria-hidden="true">$</i>
+            <div><div class="contact-lbl">Location</div><div class="contact-val">Bicol, Philippines</div></div>
+          </div>
+          <div class="contact-item">
+            <i class="contact-icon" aria-hidden="true">~</i>
+            <div><div class="contact-lbl">Status</div><div class="contact-val">Student · Open to Internships</div></div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/gabntg16" target="_blank" rel="noopener" class="social-btn">github</a>
+          <a href="https://linkedin.com/in/gabriel-bantigui-gabntg-slzr" target="_blank" rel="noopener" class="social-btn">linkedin</a>
+          <a href="https://www.facebook.com/gabmariieshone" target="_blank" rel="noopener" class="social-btn">facebook</a>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <form id="contactForm">
+          <div class="cform">
+            <div class="cform-row">
+              <div class="form-group">
+                <label class="form-label" for="cname">name</label>
+                <input class="form-control" type="text" id="cname" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cemail">email</label>
+                <input class="form-control" type="email" id="cemail" placeholder="you@email.com" required>
+              </div>
+            </div>
+            <div class="form-group form-single">
+              <label class="form-label" for="csubject">subject</label>
+              <input class="form-control" type="text" id="csubject" placeholder="Internship / Collaboration / Question">
+            </div>
+            <div class="form-group form-single">
+              <label class="form-label" for="cmessage">message</label>
+              <textarea class="form-control" id="cmessage" placeholder="Hey Gabriel, I want to work with you on..." required></textarea>
+            </div>
+            <div class="form-footer">
+              <div class="form-status" id="formStatus" aria-live="polite"></div>
+              <button type="submit" class="btn btn-primary">./send_message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footer-copy">© 2026 <span>Gabriel Bantigui</span> — Built with HTML, CSS &amp; JS</div>
+  <button class="back-top" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})">^ top</button>
+</footer>
+</body>
+</html>
+11
