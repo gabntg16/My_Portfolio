@@ -47,7 +47,7 @@
 })();
 
 // TYPED ROLE
-const roles = ['backend_developer', 'api_engineer', 'database_architect', 'server_side_coder'];
+const roles = ['backend_developer','game_developer','software_developer','web_developer ','server_side_coder'];
 let roleIndex = 0;
 let charIndex = 0;
 let removing = false;
